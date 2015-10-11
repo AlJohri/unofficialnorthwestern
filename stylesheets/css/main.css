@@ -3,20 +3,41 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-section {
+body {
+  background-color: #520063;
+  color: white; }
+
+.app-row {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  section:before, section:after {
+  .app-row:before, .app-row:after {
     content: " ";
     display: table; }
-  section:after {
+  .app-row:after {
     clear: both; }
-  section .app-column {
+  .app-row .app-column {
     display: block;
     float: left;
     margin-right: 2.35765%;
     width: 23.23176%; }
-    section .app-column:last-child {
+    .app-row .app-column:last-child {
       margin-right: 0; }
+
+.responsive-image {
+  max-height: 100%;
+  max-width: 100%; }
+
+.app-title {
+  display: block; }
+
+.app-icon {
+  text-align: center; }
+
+.watermark {
+  background-image: url("../../images/nulogo.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px; }

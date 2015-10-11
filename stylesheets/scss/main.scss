@@ -1,10 +1,36 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
-section {
+body {
+	background-color: #520063;
+	color: white;
+}
+
+.app-row {
   @include outer-container;
   .app-column { 
   	@include span-columns(3); 
   }
 }
 
+.responsive-image {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.app-title {
+	display: block;
+}
+
+.app-icon {
+	text-align: center;
+}
+
+.watermark {
+	background-image: url('../../images/nulogo.png');
+	background-size: 50%;
+	background-position: center; 
+	background-repeat: no-repeat;
+
+	height: 500px;
+}
